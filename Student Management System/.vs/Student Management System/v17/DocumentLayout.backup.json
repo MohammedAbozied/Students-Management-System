@@ -1,7 +1,22 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Open Source Project\\Student Management System\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{322C9959-1A72-4851-9068-DD82ACB5360B}|..\\Data_Access\\Data_Access.csproj|d:\\open source project\\data_access\\clspersondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA851A98-A1D4-4CD7-AE0B-1AB984F3FB30}|..\\Business\\Business.csproj|d:\\open source project\\business\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|d:\\open source project\\student management system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|D:\\Open Source Project\\Student Management System\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +24,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 317,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,6 +53,57 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsPersonData.cs",
+              "DocumentMoniker": "D:\\Open Source Project\\Data_Access\\clsPersonData.cs",
+              "RelativeDocumentMoniker": "..\\Data_Access\\clsPersonData.cs",
+              "ToolTip": "D:\\Open Source Project\\Data_Access\\clsPersonData.cs",
+              "RelativeToolTip": "..\\Data_Access\\clsPersonData.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwLAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T19:47:49.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsPerson.cs",
+              "DocumentMoniker": "D:\\Open Source Project\\Business\\clsPerson.cs",
+              "RelativeDocumentMoniker": "..\\Business\\clsPerson.cs",
+              "ToolTip": "D:\\Open Source Project\\Business\\clsPerson.cs",
+              "RelativeToolTip": "..\\Business\\clsPerson.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA7wCcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T20:51:10.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Open Source Project\\Student Management System\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:02:14.07Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Open Source Project\\Student Management System\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T22:03:34.851Z",
+              "EditorCaption": ""
             }
           ]
         },

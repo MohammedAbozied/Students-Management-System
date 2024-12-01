@@ -17,3 +17,9 @@ D:\Open Source Project\Student Management System\obj\Debug\Student Management Sy
 D:\Open Source Project\Student Management System\obj\Debug\Student .B1F29E5F.Up2Date
 D:\Open Source Project\Student Management System\obj\Debug\Student Management System.exe
 D:\Open Source Project\Student Management System\obj\Debug\Student Management System.pdb
+D:\Open Source Project\Student Management System\bin\Debug\Business.dll
+D:\Open Source Project\Student Management System\bin\Debug\Business.pdb
+D:\Open Source Project\Student Management System\bin\Debug\Data_Access.dll
+D:\Open Source Project\Student Management System\bin\Debug\Data_Access.pdb
+D:\Open Source Project\Student Management System\bin\Debug\data base\StudentManagementSystem_DataBase.mdf
+D:\Open Source Project\Student Management System\bin\Debug\data base\StudentManagementSystem_DataBase_log.ldf
