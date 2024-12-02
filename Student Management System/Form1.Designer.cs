@@ -54,6 +54,12 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnfind = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtstudentid = new System.Windows.Forms.TextBox();
+            this.txtacademicyear = new System.Windows.Forms.TextBox();
+            this.txtdepartmentid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -229,7 +235,7 @@
             // 
             // btnAddNewPerson
             // 
-            this.btnAddNewPerson.Location = new System.Drawing.Point(87, 593);
+            this.btnAddNewPerson.Location = new System.Drawing.Point(81, 699);
             this.btnAddNewPerson.Name = "btnAddNewPerson";
             this.btnAddNewPerson.Size = new System.Drawing.Size(371, 73);
             this.btnAddNewPerson.TabIndex = 20;
@@ -277,11 +283,62 @@
             this.btndelete.UseVisualStyleBackColor = true;
             this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(33, 535);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(82, 20);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "student id";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(33, 575);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(118, 20);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "academic year";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(33, 619);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(54, 20);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "dep id";
+            // 
+            // txtstudentid
+            // 
+            this.txtstudentid.Location = new System.Drawing.Point(175, 532);
+            this.txtstudentid.Name = "txtstudentid";
+            this.txtstudentid.Size = new System.Drawing.Size(223, 27);
+            this.txtstudentid.TabIndex = 25;
+            // 
+            // txtacademicyear
+            // 
+            this.txtacademicyear.Location = new System.Drawing.Point(175, 575);
+            this.txtacademicyear.Name = "txtacademicyear";
+            this.txtacademicyear.Size = new System.Drawing.Size(223, 27);
+            this.txtacademicyear.TabIndex = 26;
+            // 
+            // txtdepartmentid
+            // 
+            this.txtdepartmentid.Location = new System.Drawing.Point(175, 619);
+            this.txtdepartmentid.Name = "txtdepartmentid";
+            this.txtdepartmentid.Size = new System.Drawing.Size(223, 27);
+            this.txtdepartmentid.TabIndex = 27;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1328, 804);
+            this.Controls.Add(this.txtdepartmentid);
+            this.Controls.Add(this.txtacademicyear);
+            this.Controls.Add(this.txtstudentid);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.btnfind);
             this.Controls.Add(this.btnUpdate);
@@ -296,6 +353,9 @@
             this.Controls.Add(this.txtaddress);
             this.Controls.Add(this.txtphone);
             this.Controls.Add(this.txtlastname);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -346,6 +406,12 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnfind;
         private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtstudentid;
+        private System.Windows.Forms.TextBox txtacademicyear;
+        private System.Windows.Forms.TextBox txtdepartmentid;
     }
 }
 

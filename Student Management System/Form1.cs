@@ -21,7 +21,7 @@ namespace Student_Management_System
 
 
             InitializeComponent();
-            dataGridView1.DataSource = clsPerson.GetAllPeople();
+            //dataGridView1.DataSource = clsPerson.GetAllPeople();
 
             /*string current_path = System.IO.Directory.GetCurrentDirectory(); // the path to .exe
             // path to project directory
@@ -32,83 +32,87 @@ namespace Student_Management_System
 
         private void btnAddNewPerson_Click(object sender, EventArgs e)
         {
-            clsPerson person = new clsPerson();
-            person.PersonID = 54;
-            person.FirstName = "test";
-            person.LastName = "add new";
-            person.Email = "test@new.com";
-            person.Phone = "ffdsdsa";
-            person.DateOfBirth = DateTime.Now;
-            person.Address = "fasd";
-            person.National_NO = "Ntest";
-            person.Image_Path = "";
-            person.Gender = clsPerson.enGender.Male;
+            //clsPerson person = new clsPerson();
+            ////person.PersonID = 54;
+            //person.FirstName = "test";
+            //person.LastName = "add new";
+            //person.Email = "test@new.com";
+            //person.Phone = "ffdsdsa";
+            //person.DateOfBirth = DateTime.Now;
+            //person.Address = "fasd";
+            //person.National_NO = "Ntest2";
+            //person.Image_Path = "";
+            //person.Gender = clsPerson.enGender.Male;
 
-            if (person.Save())
-            {
-                MessageBox.Show("success", $"id {person.PersonID}", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                dataGridView1.DataSource = clsPerson.GetAllPeople();
-            }
-            else
-                MessageBox.Show("failed", "failed", MessageBoxButtons.OK, MessageBoxIcon.Error);  
+            //if (person.Save())
+            //{
+            //    //MessageBox.Show("success", $"id {person.PersonID}", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    dataGridView1.DataSource = clsPerson.GetAllPeople();
+            //}
+            //else
+            //    MessageBox.Show("failed", "failed", MessageBoxButtons.OK, MessageBoxIcon.Error);  
 
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            clsPerson person = new clsPerson(31,"","",clsPerson.enGender.Female,"","",DateTime.Now,"","","123551");
-            person.Save();
+            //clsPerson person = new clsPerson(31,"","",clsPerson.enGender.Female,"","",DateTime.Now,"","","123551");
+            //person.Save();
         }
 
         private void btnfind_Click(object sender, EventArgs e)
         {
-            int selectedID =  (int)dataGridView1.CurrentRow.Cells[0].Value;
-            clsPerson selectedPerson = clsPerson.FindPerson(selectedID);
+            //int selectedID =  (int)dataGridView1.CurrentRow.Cells[0].Value;
+            clsStudent student = clsStudent.FindStudent(2);
 
-            if (selectedPerson == null)
+            if (student == null)
             {
-                MessageBox.Show($"not existed id = {selectedID}", "not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"not existed id = {2}", "not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            txtFirstName.Text = selectedPerson.FirstName;
-            txtlastname.Text = selectedPerson.LastName;
-            txtaddress.Text = selectedPerson.Address;
-            txtemail.Text = selectedPerson.Email;
-            txtimagepath.Text = selectedPerson.Image_Path;
-            txtnationalno.Text = selectedPerson.National_NO;
-            txtphone.Text = selectedPerson.Phone;
-            dtpDateOfBirth.Value = selectedPerson.DateOfBirth;
-            if((clsPerson.enGender)selectedPerson.Gender == clsPerson.enGender.Male)
+            txtFirstName.Text = student.FirstName;
+            txtlastname.Text = student.LastName;
+            txtaddress.Text = student.Address;
+            txtemail.Text = student.Email;
+            txtimagepath.Text = student.Image_Path;
+            txtnationalno.Text = student.National_NO;
+            txtphone.Text = student.Phone;
+            dtpDateOfBirth.Value = student.DateOfBirth;
+            if((clsStudent.enGender)student.Gender == clsStudent.enGender.Male)
                 rbMale.Checked = true;
             else
                 rbFemale.Checked = true;
 
-            MessageBox.Show($"the id = {selectedID}");
+            txtstudentid.Text = student.StudentID.ToString();
+            txtdepartmentid.Text = student.DepartmentID.ToString();
+            txtacademicyear.Text = student.AcademicYear.ToString();
+            MessageBox.Show($"the id = {2}");
+
 
         }
 
         private void btndelete_Click(object sender, EventArgs e)
         {
-            int selectedID = (int)dataGridView1.CurrentRow.Cells[0].Value;
-            clsPerson selectedPerson = clsPerson.FindPerson(selectedID);
+            //int selectedID = (int)dataGridView1.CurrentRow.Cells[0].Value;
+            //clsPerson selectedPerson = clsPerson.FindPerson(selectedID);
 
-            if (selectedPerson == null)
-            {
-                MessageBox.Show($"not existed id = {selectedID}", "not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            //if (selectedPerson == null)
+            //{
+            //    MessageBox.Show($"not existed id = {selectedID}", "not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
 
-            if(selectedPerson.Delete())
-            { 
-                MessageBox.Show($"deleted successfully"); 
-                dataGridView1.DataSource = clsPerson.GetAllPeople();
-            }
-            else
-            {
+            //if(selectedPerson.Delete())
+            //{ 
+            //    MessageBox.Show($"deleted successfully"); 
+            //    dataGridView1.DataSource = clsPerson.GetAllPeople();
+            //}
+            //else
+            //{
 
-                MessageBox.Show("failed");  
-            }
+            //    MessageBox.Show("failed");  
+            //}
 
 
         }

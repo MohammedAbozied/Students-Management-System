@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Data_Access
 {
-    public class clsPersonData
+    public static class clsPersonData
     {
         public static int AddNewPerson(string Fname, string Lname, byte gender,string phone,string address,
             DateTime DOB,string image_path,string email,string national_no)

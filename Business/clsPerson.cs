@@ -9,14 +9,14 @@ using Data_Access;
 
 namespace Business
 {
-    public class clsPerson
+    public class clsPerson // we use this class to inherit it by 'users , student, instructor'
     {
-        public enum enMode { AddNew = 1 , Update=2}
-        private enMode _Mode;
+        protected enum enMode { AddNew = 1 , Update=2}
+        protected enMode _Mode; // protected to allow access in inheritance in child class
 
         public enum enGender:byte { Male = 0 , Female = 1 }
         
-        public int PersonID { get; set; }
+        protected int PersonID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string FullName { get { return FirstName + " " + LastName; } }
@@ -28,7 +28,7 @@ namespace Business
         public string Email { get; set; }
         public string National_NO { get; set; }
 
-        public clsPerson() // use this constructor add new person
+        protected clsPerson() // use this constructor add new person
         {
             this.PersonID = -1;
             this.FirstName = string.Empty;
@@ -45,7 +45,7 @@ namespace Business
         }
 
         // use this constructor to update person in find method 
-        public clsPerson(int personID,string fname,string lname,enGender Gendor,string phone,
+        protected clsPerson(int personID,string fname,string lname,enGender Gendor,string phone,
             string address,DateTime DateOfBirth, string image_path,string email,string nationalNo)
         {
             this.PersonID = personID;
@@ -76,7 +76,7 @@ namespace Business
                 this.Phone,this.Address,this.DateOfBirth,this.Image_Path,this.Email,this.National_NO);
         }
 
-        public bool Save()
+        protected bool Save()
         {
             switch(this._Mode)
             {
@@ -96,7 +96,7 @@ namespace Business
             }
         }
 
-        public static clsPerson FindPerson(int personID)
+        protected static clsPerson FindPerson(int personID)
         {
 
             string FirstName = string.Empty, LastName = string.Empty, Phone = string.Empty,
@@ -111,17 +111,17 @@ namespace Business
                 new clsPerson(personID, FirstName, LastName, (enGender)Gender, Phone, Address, DateOfBirth,
                 Image_Path, Email, National_NO) : null;
         }
-        
-        public bool Delete() // to delete this object
+
+        protected bool Delete() // to delete this object
         {
             return clsPersonData.DeletePerson(this.PersonID);
         }
-        public static bool DeletePerson(int personID) // to delete another object
+        protected static bool DeletePerson(int personID) // to delete another object
         {
             return clsPersonData.DeletePerson(personID);
         }
 
-        public static DataTable GetAllPeople()
+        protected static DataTable GetAllPeople()
         {
             return clsPersonData.GetAllPeople();
         }
