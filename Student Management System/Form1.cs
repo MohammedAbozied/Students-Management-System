@@ -19,38 +19,40 @@ namespace Student_Management_System
         public Form1()
         {
 
-
             InitializeComponent();
-            //dataGridView1.DataSource = clsPerson.GetAllPeople();
-
-            /*string current_path = System.IO.Directory.GetCurrentDirectory(); // the path to .exe
-            // path to project directory
-            string project_path = GetParent(GetParent(GetParent(current_path).FullName).FullName).FullName;
-
-            MessageBox.Show("project path: " + project_path);*/
+            dataGridView1.DataSource = clsStudent.GetAllPeople();
         }
 
         private void btnAddNewPerson_Click(object sender, EventArgs e)
         {
-            //clsPerson person = new clsPerson();
-            ////person.PersonID = 54;
-            //person.FirstName = "test";
-            //person.LastName = "add new";
-            //person.Email = "test@new.com";
-            //person.Phone = "ffdsdsa";
-            //person.DateOfBirth = DateTime.Now;
-            //person.Address = "fasd";
-            //person.National_NO = "Ntest2";
-            //person.Image_Path = "";
-            //person.Gender = clsPerson.enGender.Male;
 
-            //if (person.Save())
-            //{
-            //    //MessageBox.Show("success", $"id {person.PersonID}", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    dataGridView1.DataSource = clsPerson.GetAllPeople();
-            //}
-            //else
-            //    MessageBox.Show("failed", "failed", MessageBoxButtons.OK, MessageBoxIcon.Error);  
+            // here i test methods , it's not final result.
+
+            clsStudent student = clsStudent.FindStudent(23);
+            //student.StudentID = 17;
+            //student.FirstName = "test";
+            //student.LastName = "add new";
+            //student.Email = "test@new.com";
+            //student.Phone = "ffdsdsa";
+            //student.DateOfBirth = DateTime.Now;
+            //student.Address = "fasd";
+            //student.National_NO = "N0t510k01402";
+            //student.Image_Path = "";
+            //student.Gender = clsPerson.enGender.Male;
+            //student.AcademicYear = 1;
+            //student.DepartmentID = 1;
+            if (MessageBox.Show("full name "+ student.FullName,"",MessageBoxButtons.OK) == DialogResult.OK)
+            {
+
+            }
+            
+            if (student.Delete())
+            {
+                MessageBox.Show("success deleted", $"stud id {student.StudentID}\n", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataGridView1.DataSource = clsPerson.GetAllPeople();
+            }
+            else
+                MessageBox.Show("failed", "failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         }
 

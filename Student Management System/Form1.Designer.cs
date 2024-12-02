@@ -239,7 +239,7 @@
             this.btnAddNewPerson.Name = "btnAddNewPerson";
             this.btnAddNewPerson.Size = new System.Drawing.Size(371, 73);
             this.btnAddNewPerson.TabIndex = 20;
-            this.btnAddNewPerson.Text = "Add Person";
+            this.btnAddNewPerson.Text = "add student";
             this.btnAddNewPerson.UseVisualStyleBackColor = true;
             this.btnAddNewPerson.Click += new System.EventHandler(this.btnAddNewPerson_Click);
             // 

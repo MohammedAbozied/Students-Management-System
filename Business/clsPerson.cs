@@ -91,6 +91,7 @@ namespace Business
                     }
                 case enMode.Update:
                     return _UpdatePerson();
+
                 default:
                     return false;
             }
@@ -121,7 +122,7 @@ namespace Business
             return clsPersonData.DeletePerson(personID);
         }
 
-        protected static DataTable GetAllPeople()
+        public static DataTable GetAllPeople()
         {
             return clsPersonData.GetAllPeople();
         }

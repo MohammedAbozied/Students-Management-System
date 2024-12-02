@@ -1,6 +1,7 @@
 ﻿using System;
 using System.CodeDom;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,44 @@ namespace Business
             this._StudentMode = eMode.Update;
         }
 
+        private bool _AddNewStudent()
+        {
+            this.StudentID = clsStudentData.AddNewStudent(base.PersonID, this.AcademicYear, this.DepartmentID);
+            return StudentID != -1;
+
+        }
+
+        private bool _UpdatePerson()
+        {
+            return clsStudentData.UpdateStudent(this.StudentID, this.AcademicYear, this.DepartmentID);
+        }
+
+        public bool Save()
+        {
+            
+            if (!base.Save())
+                return false;
+
+            switch(this._StudentMode)
+            {
+                case eMode.AddNew:
+                    {
+                        if(_AddNewStudent())
+                        {
+                            this._StudentMode = eMode.Update;
+                            return true;
+                        }
+                        return false;
+                    }
+
+                case eMode.Update:
+                    return _UpdatePerson();
+
+                default:
+                    return false;
+            }
+        }
+
         public static clsStudent FindStudent(int studentID)
         {
             int personID = -1, departmentID = -1;
@@ -57,6 +96,32 @@ namespace Business
             else
                 return null; // if no user founded
         }
+
+        // delete 
+        public bool Delete()
+        {
+            // after making enrollment class ,we should delete it first.
+            return clsStudentData.DeleteStudent(this.StudentID) && base.Delete();
+        }
+
+        public static bool DeleteStudent(int studentID)
+        {
+            clsStudent targetStudent = FindStudent(studentID);
+
+            // make sure student is existed.
+            if(targetStudent != null)
+            {
+                return targetStudent.Delete();
+            }
+
+            return false;
+        }
+
+        //public static DataTable GetAllStudents()
+        //{
+
+        //}
+        
 
 
     }
