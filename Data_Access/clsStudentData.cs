@@ -89,7 +89,7 @@ namespace Data_Access
             {
                 string query = @"UPDATE Student 
                                     SET AcademicYear = @academicYear,
-                                        DepID =departmentID 
+                                        DepID = @departmentID 
                                 WHERE Stu_ID = @studentID";
 
                 using(SqlCommand command = new SqlCommand(query , connection))
@@ -143,7 +143,7 @@ namespace Data_Access
             DataTable dataTable = new DataTable();
             using(SqlConnection connection = new SqlConnection( DataAccessSettings.ConnectionString))
             {
-                string query = "SELECT * FROM Student"; // after making department classes will replace it with view to show all info. 
+                string query = "SELECT * FROM StudentsInfo_View"; // after making department classes will replace it with view to show all info. 
 
                 using(SqlCommand command = new SqlCommand(query,connection))
                 {

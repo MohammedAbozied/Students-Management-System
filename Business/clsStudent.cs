@@ -14,7 +14,8 @@ namespace Business
         public enum eMode { AddNew = 0 , Update = 1 }
         private eMode _StudentMode;
 
-        public int StudentID { get; set; }
+        public int StudentID { get { return _StudentID; } } // to prevent editing ID by object.
+        private int _StudentID { get; set; }
         private int _PersonID;
         public byte AcademicYear { get; set; }
         public int DepartmentID { get; set; }
@@ -22,7 +23,7 @@ namespace Business
 
         public clsStudent():base() // call constructor of person when call student
         {
-            this.StudentID = -1;
+            this._StudentID = -1;
             this._PersonID = -1;
             this.AcademicYear = 0;
             this.DepartmentID = -1;
@@ -34,7 +35,7 @@ namespace Business
             string phone,string address,DateTime dateOfBirth,string image_path,string email,string national_no ,byte academicYear, int departmentID)
             :base(personID,fname,lname,gender,phone,address,dateOfBirth,image_path,email,national_no)
         {
-            this.StudentID = stu_id;
+            this._StudentID = stu_id;
             this._PersonID = personID;
             this.AcademicYear = academicYear;
             this.DepartmentID = departmentID;
@@ -44,14 +45,14 @@ namespace Business
 
         private bool _AddNewStudent()
         {
-            this.StudentID = clsStudentData.AddNewStudent(base.PersonID, this.AcademicYear, this.DepartmentID);
-            return StudentID != -1;
+            this._StudentID = clsStudentData.AddNewStudent(base.PersonID, this.AcademicYear, this.DepartmentID);
+            return _StudentID != -1;
 
         }
 
-        private bool _UpdatePerson()
+        private bool _UpdateStudent()
         {
-            return clsStudentData.UpdateStudent(this.StudentID, this.AcademicYear, this.DepartmentID);
+            return clsStudentData.UpdateStudent(this._StudentID, this.AcademicYear, this.DepartmentID);
         }
 
         public bool Save()
@@ -73,7 +74,7 @@ namespace Business
                     }
 
                 case eMode.Update:
-                    return _UpdatePerson();
+                    return _UpdateStudent();
 
                 default:
                     return false;
@@ -101,7 +102,7 @@ namespace Business
         public bool Delete()
         {
             // after making enrollment class ,we should delete it first.
-            return clsStudentData.DeleteStudent(this.StudentID) && base.Delete();
+            return clsStudentData.DeleteStudent(this._StudentID) && base.Delete();
         }
 
         public static bool DeleteStudent(int studentID)
@@ -117,11 +118,11 @@ namespace Business
             return false;
         }
 
-        //public static DataTable GetAllStudents()
-        //{
+        public static DataTable GetAllStudents()
+        {
+            return clsStudentData.GetAllStudents();
+        }
 
-        //}
-        
 
 
     }

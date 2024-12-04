@@ -122,7 +122,7 @@ namespace Business
             return clsPersonData.DeletePerson(personID);
         }
 
-        public static DataTable GetAllPeople()
+        protected static DataTable GetAllPeople() // i made it for just testing , not to use in system.
         {
             return clsPersonData.GetAllPeople();
         }

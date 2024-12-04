@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-/*using static System.IO.Directory;*/
+
 
 namespace Student_Management_System
 {
@@ -20,15 +20,15 @@ namespace Student_Management_System
         {
 
             InitializeComponent();
-            dataGridView1.DataSource = clsStudent.GetAllPeople();
+            dataGridView1.DataSource = clsStudent.GetAllStudents();
         }
 
         private void btnAddNewPerson_Click(object sender, EventArgs e)
         {
 
-            // here i test methods , it's not final result.
+            //here i test methods, it's not final result.
 
-            clsStudent student = clsStudent.FindStudent(23);
+            clsStudent student = clsStudent.FindStudent(2);
             //student.StudentID = 17;
             //student.FirstName = "test";
             //student.LastName = "add new";
@@ -41,15 +41,19 @@ namespace Student_Management_System
             //student.Gender = clsPerson.enGender.Male;
             //student.AcademicYear = 1;
             //student.DepartmentID = 1;
-            if (MessageBox.Show("full name "+ student.FullName,"",MessageBoxButtons.OK) == DialogResult.OK)
+            student.FirstName = "Heba";
+            student.LastName = "Said";
+            student.DepartmentID = 1;
+            student.AcademicYear = 1;
+            if (MessageBox.Show("full name " + student.FullName, "", MessageBoxButtons.OK) == DialogResult.OK)
             {
 
             }
-            
-            if (student.Delete())
+
+            if (student.Save())
             {
-                MessageBox.Show("success deleted", $"stud id {student.StudentID}\n", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                dataGridView1.DataSource = clsPerson.GetAllPeople();
+                MessageBox.Show("success updated", $"dep id {student.DepartmentID}\n", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataGridView1.DataSource = clsStudent.GetAllStudents();
             }
             else
                 MessageBox.Show("failed", "failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -65,7 +69,7 @@ namespace Student_Management_System
         private void btnfind_Click(object sender, EventArgs e)
         {
             //int selectedID =  (int)dataGridView1.CurrentRow.Cells[0].Value;
-            clsStudent student = clsStudent.FindStudent(2);
+            clsStudent student = clsStudent.FindStudent(1);
 
             if (student == null)
             {
@@ -81,7 +85,7 @@ namespace Student_Management_System
             txtnationalno.Text = student.National_NO;
             txtphone.Text = student.Phone;
             dtpDateOfBirth.Value = student.DateOfBirth;
-            if((clsStudent.enGender)student.Gender == clsStudent.enGender.Male)
+            if ((clsStudent.enGender)student.Gender == clsStudent.enGender.Male)
                 rbMale.Checked = true;
             else
                 rbFemale.Checked = true;
