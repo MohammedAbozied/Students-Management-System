@@ -48,12 +48,9 @@
             this.rbMale = new System.Windows.Forms.RadioButton();
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
-            this.btnAddNewPerson = new System.Windows.Forms.Button();
+            this.btntest = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnfind = new System.Windows.Forms.Button();
-            this.btndelete = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -233,15 +230,15 @@
             this.dtpDateOfBirth.Size = new System.Drawing.Size(223, 27);
             this.dtpDateOfBirth.TabIndex = 19;
             // 
-            // btnAddNewPerson
+            // btntest
             // 
-            this.btnAddNewPerson.Location = new System.Drawing.Point(81, 699);
-            this.btnAddNewPerson.Name = "btnAddNewPerson";
-            this.btnAddNewPerson.Size = new System.Drawing.Size(371, 73);
-            this.btnAddNewPerson.TabIndex = 20;
-            this.btnAddNewPerson.Text = "add student";
-            this.btnAddNewPerson.UseVisualStyleBackColor = true;
-            this.btnAddNewPerson.Click += new System.EventHandler(this.btnAddNewPerson_Click);
+            this.btntest.Location = new System.Drawing.Point(521, 552);
+            this.btntest.Name = "btntest";
+            this.btntest.Size = new System.Drawing.Size(371, 73);
+            this.btntest.TabIndex = 20;
+            this.btntest.Text = "test";
+            this.btntest.UseVisualStyleBackColor = true;
+            this.btntest.Click += new System.EventHandler(this.btnAddNewPerson_Click);
             // 
             // dataGridView1
             // 
@@ -252,36 +249,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(900, 460);
             this.dataGridView1.TabIndex = 21;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(494, 593);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(371, 73);
-            this.btnUpdate.TabIndex = 22;
-            this.btnUpdate.Text = "update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnfind
-            // 
-            this.btnfind.Location = new System.Drawing.Point(892, 593);
-            this.btnfind.Name = "btnfind";
-            this.btnfind.Size = new System.Drawing.Size(371, 73);
-            this.btnfind.TabIndex = 23;
-            this.btnfind.Text = "find";
-            this.btnfind.UseVisualStyleBackColor = true;
-            this.btnfind.Click += new System.EventHandler(this.btnfind_Click);
-            // 
-            // btndelete
-            // 
-            this.btndelete.Location = new System.Drawing.Point(494, 699);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(371, 73);
-            this.btndelete.TabIndex = 24;
-            this.btndelete.Text = "Delete";
-            this.btndelete.UseVisualStyleBackColor = true;
-            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // label11
             // 
@@ -335,15 +302,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1328, 804);
             this.Controls.Add(this.txtdepartmentid);
             this.Controls.Add(this.txtacademicyear);
             this.Controls.Add(this.txtstudentid);
-            this.Controls.Add(this.btndelete);
-            this.Controls.Add(this.btnfind);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnAddNewPerson);
+            this.Controls.Add(this.btntest);
             this.Controls.Add(this.dtpDateOfBirth);
             this.Controls.Add(this.rbFemale);
             this.Controls.Add(this.rbMale);
@@ -400,12 +365,9 @@
         private System.Windows.Forms.RadioButton rbMale;
         private System.Windows.Forms.RadioButton rbFemale;
         private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
-        private System.Windows.Forms.Button btnAddNewPerson;
+        private System.Windows.Forms.Button btntest;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnfind;
-        private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;

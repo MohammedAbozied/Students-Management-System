@@ -31,7 +31,7 @@ namespace Business
             
         }
 
-        public clsStudent(int stu_id, int personID,string fname,string lname,clsPerson.enGender gender,
+        private clsStudent(int stu_id, int personID,string fname,string lname,clsPerson.enGender gender,
             string phone,string address,DateTime dateOfBirth,string image_path,string email,string national_no ,byte academicYear, int departmentID)
             :base(personID,fname,lname,gender,phone,address,dateOfBirth,image_path,email,national_no)
         {
