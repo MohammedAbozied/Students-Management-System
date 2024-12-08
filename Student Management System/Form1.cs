@@ -30,7 +30,7 @@ namespace Student_Management_System
             //here i test methods, it's not final result.
 
 
-            var course = clsCourse.Find(108);
+            var course = clsCourse.Find(104);
 
             
             if (course.Delete())
