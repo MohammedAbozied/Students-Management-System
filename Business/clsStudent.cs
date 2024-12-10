@@ -95,7 +95,7 @@ namespace Business
                     personInfo.National_NO, academicYear, departmentID);
             }
             else
-                return null; // if no user founded
+                return null; // if no student founded
         }
 
         // delete 
