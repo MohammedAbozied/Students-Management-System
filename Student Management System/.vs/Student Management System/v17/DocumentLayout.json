@@ -3,7 +3,14 @@
   "WorkspaceRootPath": "D:\\Open Source Project\\Student Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|d:\\open source project\\student management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|d:\\open source project\\student management system\\main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA851A98-A1D4-4CD7-AE0B-1AB984F3FB30}|..\\Business\\Business.csproj|d:\\open source project\\business\\clsdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|D:\\Open Source Project\\Student Management System\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -47,14 +54,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Main_Form.cs [Design]",
+              "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\Main_Form\\Main_Form.cs",
+              "RelativeDocumentMoniker": "Main_Form\\Main_Form.cs",
+              "ToolTip": "D:\\Open Source Project\\Student Management System\\Main_Form\\Main_Form.cs [Design]",
+              "RelativeToolTip": "Main_Form\\Main_Form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T13:58:36.513Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Open Source Project\\Student Management System\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T19:10:51.773Z",
+              "WhenOpened": "2024-12-10T13:21:09.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsDepartment.cs",
+              "DocumentMoniker": "D:\\Open Source Project\\Business\\clsDepartment.cs",
+              "RelativeDocumentMoniker": "..\\Business\\clsDepartment.cs",
+              "ToolTip": "D:\\Open Source Project\\Business\\clsDepartment.cs",
+              "RelativeToolTip": "..\\Business\\clsDepartment.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAgwGEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:57:20.858Z",
               "EditorCaption": ""
             }
           ]
