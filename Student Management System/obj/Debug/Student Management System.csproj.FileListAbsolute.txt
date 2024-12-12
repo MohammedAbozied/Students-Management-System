@@ -23,3 +23,30 @@ D:\Open Source Project\Student Management System\obj\Debug\Student .B1F29E5F.Up2
 D:\Open Source Project\Student Management System\obj\Debug\Student Management System.exe
 D:\Open Source Project\Student Management System\obj\Debug\Student Management System.pdb
 D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.Main_Form.resources
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\data base\StudentManagementSystem_DataBase.mdf
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\data base\StudentManagementSystem_DataBase_log.ldf
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\Student Management System.exe.config
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\Student Management System.exe
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\Student Management System.pdb
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\Business.dll
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\EntityFramework.dll
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\Guna.UI2.dll
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\Data_Access.dll
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\Business.pdb
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\EntityFramework.xml
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\bin\Debug\Data_Access.pdb
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Debug\Student Management System.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Debug\Student_Management_System.Main_Form.resources
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Debug\Student_Management_System.Properties.Resources.resources
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Debug\Student_Management_System.RegisterForm.resources
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Debug\Student Management System.csproj.GenerateResource.cache
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Debug\Student Management System.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Debug\Student .B1F29E5F.Up2Date
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Debug\Student Management System.exe
+C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Debug\Student Management System.pdb

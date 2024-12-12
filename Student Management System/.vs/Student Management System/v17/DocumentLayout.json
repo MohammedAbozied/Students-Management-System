@@ -1,17 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Open Source Project\\Student Management System\\",
+  "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|d:\\open source project\\student management system\\main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|c:\\users\\hp\\desktop\\students-management-system\\student management system\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|c:\\users\\hp\\desktop\\students-management-system\\student management system\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|c:\\users\\hp\\desktop\\students-management-system\\student management system\\main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|c:\\users\\hp\\desktop\\students-management-system\\student management system\\main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA851A98-A1D4-4CD7-AE0B-1AB984F3FB30}|..\\Business\\Business.csproj|d:\\open source project\\business\\clsdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|c:\\users\\hp\\desktop\\students-management-system\\student management system\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|D:\\Open Source Project\\Student Management System\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\open source project\\business\\clsdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,43 +37,66 @@
       "DocumentGroups": [
         {
           "DockedHeight": 317,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main_Form.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\Main_Form\\Main_Form.cs",
+              "RelativeDocumentMoniker": "Main_Form\\Main_Form.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\Main_Form\\Main_Form.cs",
+              "RelativeToolTip": "Main_Form\\Main_Form.cs",
+              "ViewState": "AQIAAK0AAAAAAAAAAAAowL0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T15:26:07.391Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "RegisterForm.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\RegisterForm.cs",
+              "RelativeToolTip": "RegisterForm.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAYwCwAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T13:31:47.191Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "RegisterForm.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "RegisterForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T12:56:25.101Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\RegisterForm.Designer.cs",
+              "RelativeDocumentMoniker": "RegisterForm.Designer.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\RegisterForm.Designer.cs",
+              "RelativeToolTip": "RegisterForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T13:00:25.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Main_Form.cs [Design]",
-              "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\Main_Form\\Main_Form.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\Main_Form\\Main_Form.cs",
               "RelativeDocumentMoniker": "Main_Form\\Main_Form.cs",
-              "ToolTip": "D:\\Open Source Project\\Student Management System\\Main_Form\\Main_Form.cs [Design]",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\Main_Form\\Main_Form.cs [Design]",
               "RelativeToolTip": "Main_Form\\Main_Form.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T13:58:36.513Z",
@@ -65,43 +104,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Open Source Project\\Student Management System\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Students-Management-System\\Student Management System\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T13:21:09.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "clsDepartment.cs",
               "DocumentMoniker": "D:\\Open Source Project\\Business\\clsDepartment.cs",
-              "RelativeDocumentMoniker": "..\\Business\\clsDepartment.cs",
               "ToolTip": "D:\\Open Source Project\\Business\\clsDepartment.cs",
-              "RelativeToolTip": "..\\Business\\clsDepartment.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAgwGEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T23:57:20.858Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedHeight": 69,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

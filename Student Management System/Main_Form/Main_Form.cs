@@ -183,5 +183,11 @@ namespace Student_Management_System
         {
 
         }
+
+        private void button_registration_Click_1(object sender, EventArgs e)
+        {
+            RegisterForm frm = new RegisterForm();
+            frm.ShowDialog();
+        }
     }
 }
