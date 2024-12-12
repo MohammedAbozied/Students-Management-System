@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI;
 using System.Windows.Forms;
 using Business;
 using Guna.UI2.WinForms;
@@ -40,19 +41,25 @@ namespace Student_Management_System
             InitializeComponent();
         }
 
-        private static DataTable dt = clsStudent.GetAllStudents();
-        private DataView dv = new DataView(dt);
+        private static DataTable dt;
+        private DataView dv;
 
         
         private void RegisterForm1_Load(object sender, EventArgs e)
         {
+            dt = clsStudent.GetAllStudents();
+            dv = new DataView(dt);
+
             DGVStudents.DataSource = dv;
             DGVStudents.ColumnHeadersHeight = 50;
             DGVStudents.AllowUserToResizeColumns = false;
             DGVStudents.AllowUserToResizeRows= false;
             DGVStudents.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             DGVStudents.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
             
+
+
 
             if (DGVStudents.RowCount > 0)
             {
@@ -104,7 +111,9 @@ namespace Student_Management_System
 
             // to fill departments combo box.
             DataTable dtDepartments = clsDepartment.GetDepartmentsName();
-            foreach(DataRow dr in dtDepartments.Rows)
+            cbDepartments.Items.Clear();
+
+            foreach (DataRow dr in dtDepartments.Rows)
             {
                 cbDepartments.Items.Add(dr["Name"].ToString());
             }
@@ -130,6 +139,30 @@ namespace Student_Management_System
             }
             else
                 MessageBox.Show("Field in Deleting Student.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
+
+        private void btnAddStudent_Click(object sender, EventArgs e)
+        {
+            var student = new clsStudent()
+            {
+                FirstName = "kareem",
+                LastName = "ali",
+                AcademicYear = 1,
+                Address = "fadsf",
+                DateOfBirth = DateTime.Now,
+                DepartmentID = 1,
+                Email = "fas",
+                National_NO = "fsda4"
+
+            };
+
+            if(student.Save())
+                MessageBox.Show("done");
+            else
+                MessageBox.Show("failed");
+
+                RegisterForm1_Load(null, null); // to refresh form , and update Students list.
 
         }
     }

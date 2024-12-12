@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Open Source Project\\Student Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|D:\\Open Source Project\\Student Management System\\main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|d:\\open source project\\student management system\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|D:\\Open Source Project\\Student Management System\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|D:\\Open Source Project\\Student Management System\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|D:\\Open Source Project\\Student Management System\\main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|d:\\open source project\\student management system\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|D:\\Open Source Project\\Student Management System\\main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:main_form\\main_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 317,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,38 +58,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Main_Form.cs",
               "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\Main_Form\\Main_Form.cs",
               "RelativeDocumentMoniker": "Main_Form\\Main_Form.cs",
               "ToolTip": "D:\\Open Source Project\\Student Management System\\Main_Form\\Main_Form.cs",
               "RelativeToolTip": "Main_Form\\Main_Form.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAA/wMoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALsAAAAAAAAAAAA/wMgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T15:26:07.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "RegisterForm.cs",
               "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\RegisterForm.cs",
               "RelativeDocumentMoniker": "RegisterForm.cs",
-              "ToolTip": "D:\\Open Source Project\\Student Management System\\RegisterForm.cs",
-              "RelativeToolTip": "RegisterForm.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAkwGMAAAA6AAAAAAAAAA==",
+              "ToolTip": "D:\\Open Source Project\\Student Management System\\RegisterForm.cs*",
+              "RelativeToolTip": "RegisterForm.cs*",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAqwHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T13:31:47.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "RegisterForm.cs [Design]",
               "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\RegisterForm.cs",
               "RelativeDocumentMoniker": "RegisterForm.cs",
-              "ToolTip": "D:\\Open Source Project\\Student Management System\\RegisterForm.cs [Design]",
-              "RelativeToolTip": "RegisterForm.cs [Design]",
+              "ToolTip": "D:\\Open Source Project\\Student Management System\\RegisterForm.cs [Design]*",
+              "RelativeToolTip": "RegisterForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T12:56:25.101Z",
               "EditorCaption": " [Design]"
@@ -114,15 +114,15 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3822e751-eb69-4b0e-b301-595a9e4c74d5}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3822e751-eb69-4b0e-b301-595a9e4c74d5}"
             }
           ]
         }
