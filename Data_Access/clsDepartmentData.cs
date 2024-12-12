@@ -140,12 +140,43 @@ namespace Data_Access
             return affectedRows > 0;
         }
 
+
         public static DataTable GetAllDepartments() 
         {
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString))
             {
                 string query = "SELECT * FROM Departments_View ORDER BY DepartmentID ASC";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    try
+                    {
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                dataTable.Load(reader);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                    }
+                }
+            }
+
+            return dataTable;
+        }
+        
+        public static DataTable GetDepartmentsName() 
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString))
+            {
+                string query = "SELECT Name FROM Department";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {

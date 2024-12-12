@@ -101,6 +101,12 @@ namespace Business
         {
             return clsDepartmentData.GetAllDepartments();
         }
+        
+        public static DataTable GetDepartmentsName()
+        {
+            return clsDepartmentData.GetDepartmentsName();
+        }
+
 
 
     }

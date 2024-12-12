@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net.NetworkInformation;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -166,6 +167,35 @@ namespace Data_Access
             }
 
             return dataTable;
+        }
+        
+        public static int CountMales()
+        {
+            int result = 0;
+            using(SqlConnection connection = new SqlConnection( DataAccessSettings.ConnectionString))
+            {
+                string query = "SELECT Count(Stu_ID) FROM Student INNER JOIN Person ON Student.PersonID = Person.PersonID AND Gender = 0 ";  
+
+                using(SqlCommand command = new SqlCommand(query,connection))
+                {
+                    try
+                    {
+                        connection.Open();
+                        
+                        object count = command.ExecuteScalar();
+                        if(count != null && int.TryParse(count.ToString(), out int r))
+                        {
+                            result = r;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                    }
+                }
+            }
+
+            return result;
         }
 
 

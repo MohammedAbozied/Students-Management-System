@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -186,8 +187,34 @@ namespace Student_Management_System
 
         private void button_registration_Click_1(object sender, EventArgs e)
         {
+            
+            main_panel.Controls.Clear();
+
             RegisterForm frm = new RegisterForm();
-            frm.ShowDialog();
+
+            frm.DataBack += 
+                (object s, RegisterForm.DataBackEventArgs d) =>
+                {
+                    lblTotalStudents.Text = d.TotalStudents.ToString();
+                    lblTotalMale.Text = d.TotalMale.ToString();
+                    lblTotalFemale.Text = d.TotalFemale.ToString();
+                };
+
+
+            frm.TopLevel = false;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill; 
+
+            main_panel.Controls.Add(frm);
+            main_panel.Tag = frm;
+
+            frm.BringToFront();
+            frm.Show();
+        }
+
+        private void Main_Form_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

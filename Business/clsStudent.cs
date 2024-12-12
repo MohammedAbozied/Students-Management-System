@@ -123,6 +123,10 @@ namespace Business
             return clsStudentData.GetAllStudents();
         }
 
+        public static int CountMales()
+        {
+            return clsStudentData.CountMales();
+        }
 
 
     }
