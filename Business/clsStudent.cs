@@ -19,7 +19,7 @@ namespace Business
         private int _PersonID;
         public byte AcademicYear { get; set; }
         public int DepartmentID { get; set; }
-        //public clsDepartment DepartmentInfo{ get; set; }
+        public clsDepartment DepartmentInfo { get; set; }
 
         public clsStudent():base() // call constructor of person when call student
         {
@@ -39,7 +39,8 @@ namespace Business
             this._PersonID = personID;
             this.AcademicYear = academicYear;
             this.DepartmentID = departmentID;
-            //this.DepartmentInfo = clsDepartment.Find(this.DepartmentID);
+            this.DepartmentInfo = clsDepartment.FindDepartment(this.DepartmentID);
+
             this._StudentMode = eMode.Update;
         }
 
@@ -101,8 +102,7 @@ namespace Business
         // delete 
         public bool Delete()
         {
-            // after making enrollment class ,we should delete it first.
-            return clsStudentData.DeleteStudent(this._StudentID) && base.Delete();
+            return DeleteAllEnrollmentsForStudent(this._StudentID) && clsStudentData.DeleteStudent(this._StudentID) && base.Delete();
         }
 
         public static bool DeleteStudent(int studentID)
@@ -118,6 +118,14 @@ namespace Business
             return false;
         }
 
+        public static bool DeleteAllEnrollmentsForStudent(int studentID)
+        {
+            if (!clsStudentData.StudentHasEnrollments(studentID))
+                return true; // if student hasn't any enrollments return true.
+
+            return clsStudentData.DeleteAllEnrollmentsForStudentID(studentID);
+        }
+
         public static DataTable GetAllStudents()
         {
             return clsStudentData.GetAllStudents();
@@ -128,6 +136,6 @@ namespace Business
             return clsStudentData.CountMales();
         }
 
-
+        
     }
 }

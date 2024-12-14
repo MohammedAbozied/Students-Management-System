@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
@@ -197,6 +198,59 @@ namespace Data_Access
 
             return result;
         }
+
+        public static bool DeleteAllEnrollmentsForStudentID(int studentID)
+        {
+
+            int affectedRows = 0;
+            using (SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString))
+            {
+                string query = "DELETE FROM Enrollment WHERE Stu_ID = @studentID";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@studentID", studentID);
+
+                    try
+                    {
+                        connection.Open();
+                        affectedRows = command.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                    }
+                }
+            }
+
+            return affectedRows > 0;
+        }
+
+        public static bool StudentHasEnrollments(int studentID)
+        {
+            using (SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString))
+            {
+                string query = @"SELECT TOP 1 Stu_ID FROM Enrollment WHERE Stu_ID = @studentID";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@studentID", studentID);
+
+                    try
+                    {
+                        connection.Open();
+                        return command.ExecuteScalar() != null;
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                        return false;
+                    }
+                }
+            }
+
+        }
+
 
 
 

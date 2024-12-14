@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="clsCourseData.cs" />
     <Compile Include="clsDepartmentData.cs" />
+    <Compile Include="clsEnrollmentData.cs" />
     <Compile Include="clsInstructorData.cs" />
     <Compile Include="clsPersonData.cs" />
     <Compile Include="clsStudentData.cs" />
