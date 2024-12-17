@@ -14,9 +14,18 @@ namespace Business
         private enum enMode { AddNew = 0 , Update = 1 }
         private enMode _Mode;
 
-        public int DepartmentID { get { return _DepartmentID; }  }
+        public enum Department
+        { 	Computer_Science = 1,
+            Information_Systems = 2,
+            Information_Technology = 3,
+            Software_Engineering = 4,
+            Artificial_intelligence = 5,
+            BioInformatics = 6
+        }
 
-        private int _DepartmentID;
+        public int DepartmentID { get { return (int)_DepartmentID; }  }
+
+        private Department _DepartmentID;
         public string DepartmentName { get; set; }
         public int HOD { get; set; }
         public clsInstructor HOD_Info;
@@ -30,7 +39,7 @@ namespace Business
             this._Mode = enMode.AddNew;
         }
         
-        public clsDepartment(int departmentID, string departmentName, int HOD)
+        public clsDepartment(Department departmentID, string departmentName, int HOD)
         {
             this._DepartmentID = departmentID;
             this.DepartmentName = departmentName;
@@ -42,13 +51,14 @@ namespace Business
 
         private bool _AddNewDepartment()
         {
-            this._DepartmentID = clsDepartmentData.AddNewDepartment(this.DepartmentName,this.HOD);
-            return this._DepartmentID != -1;
+            this._DepartmentID = (Department)clsDepartmentData.AddNewDepartment(this.DepartmentName,this.HOD);
+
+            return (int)this._DepartmentID != -1;
         }
 
         private bool _UpdateDepartment()
         {
-            return clsDepartmentData.UpdateDepartment(this._DepartmentID,this.DepartmentName,this.HOD);
+            return clsDepartmentData.UpdateDepartment((int)this._DepartmentID,this.DepartmentName,this.HOD);
         }
 
         public bool Save()
@@ -81,14 +91,14 @@ namespace Business
             string departmentName = string.Empty;
 
             return clsDepartmentData.GetDepartmentInfo(departmentID, ref departmentName, ref HOD) ?
-                new clsDepartment(departmentID, departmentName, HOD) : null;
+                new clsDepartment((Department)departmentID, departmentName, HOD) : null;
 
         }
 
 
         public bool Delete()
         {
-            return clsDepartmentData.DeleteDepartment(this._DepartmentID);
+            return clsDepartmentData.DeleteDepartment((int)this._DepartmentID);
         }
 
         public static bool DeleteDepartment(int departmentID)

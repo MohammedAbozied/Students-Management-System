@@ -25,18 +25,18 @@ namespace Business
         public string Code { get; set; }
         public byte Hours { get; set; }
         public int DepartmentID { get; set; }
-        //public clsDepartment DepartmentInfo
-        //{ 
-        //    get 
-        //    {
-        //        return clsDepartment.Find(DepartmentID);
-        //    } 
-        //}
+        public clsDepartment DepartmentInfo
+        {
+            get
+            {
+                return clsDepartment.FindDepartment(DepartmentID);
+            }
+        }
         public int InstructorID { get; set; }
-        //public clsInstructor InstructorInfo
-        //{
-        //    get { return clsInstructor.Find(InstructorID)}; 
-        //}
+        public clsInstructor InstructorInfo
+        {
+            get { return clsInstructor.FindInstructor(InstructorID); }
+        }
 
         public clsCourse()
         {

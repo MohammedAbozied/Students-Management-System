@@ -1,8 +1,8 @@
 D:\Open Source Project\Data_Access\bin\Debug\data base\StudentManagementSystem_DataBase.mdf
 D:\Open Source Project\Data_Access\bin\Debug\data base\StudentManagementSystem_DataBase_log.ldf
+D:\Open Source Project\Data_Access\bin\Debug\Data_Access.dll
+D:\Open Source Project\Data_Access\bin\Debug\Data_Access.pdb
 D:\Open Source Project\Data_Access\obj\Debug\Data_Access.csproj.AssemblyReference.cache
 D:\Open Source Project\Data_Access\obj\Debug\Data_Access.csproj.CoreCompileInputs.cache
 D:\Open Source Project\Data_Access\obj\Debug\Data_Access.dll
 D:\Open Source Project\Data_Access\obj\Debug\Data_Access.pdb
-D:\Open Source Project\Data_Access\bin\Debug\Data_Access.dll
-D:\Open Source Project\Data_Access\bin\Debug\Data_Access.pdb

@@ -18,7 +18,7 @@ namespace Business
         private int _StudentID { get; set; }
         private int _PersonID;
         public byte AcademicYear { get; set; }
-        public int DepartmentID { get; set; }
+        public clsDepartment.Department DepartmentID { get; set; }
         public clsDepartment DepartmentInfo { get; set; }
 
         public clsStudent():base() // call constructor of person when call student
@@ -26,34 +26,34 @@ namespace Business
             this._StudentID = -1;
             this._PersonID = -1;
             this.AcademicYear = 0;
-            this.DepartmentID = -1;
+            this.DepartmentID = clsDepartment.Department.Artificial_intelligence;
             this._StudentMode = eMode.AddNew;
             
         }
 
         private clsStudent(int stu_id, int personID,string fname,string lname,clsPerson.enGender gender,
-            string phone,string address,DateTime dateOfBirth,string image_path,string email,string national_no ,byte academicYear, int departmentID)
+            string phone,string address,DateTime dateOfBirth,string image_path,string email,string national_no ,byte academicYear, clsDepartment.Department departmentID)
             :base(personID,fname,lname,gender,phone,address,dateOfBirth,image_path,email,national_no)
         {
             this._StudentID = stu_id;
             this._PersonID = personID;
             this.AcademicYear = academicYear;
             this.DepartmentID = departmentID;
-            this.DepartmentInfo = clsDepartment.FindDepartment(this.DepartmentID);
+            this.DepartmentInfo = clsDepartment.FindDepartment((int)this.DepartmentID);
 
             this._StudentMode = eMode.Update;
         }
 
         private bool _AddNewStudent()
         {
-            this._StudentID = clsStudentData.AddNewStudent(base.PersonID, this.AcademicYear, this.DepartmentID);
+            this._StudentID = clsStudentData.AddNewStudent(base.PersonID, this.AcademicYear,(int) this.DepartmentID);
             return _StudentID != -1;
 
         }
 
         private bool _UpdateStudent()
         {
-            return clsStudentData.UpdateStudent(this._StudentID, this.AcademicYear, this.DepartmentID);
+            return clsStudentData.UpdateStudent(this._StudentID, this.AcademicYear,(int)this.DepartmentID);
         }
 
         public bool Save()
@@ -93,7 +93,7 @@ namespace Business
 
                 return new clsStudent(studentID, personID, personInfo.FirstName, personInfo.LastName, personInfo.Gender,
                     personInfo.Phone, personInfo.Address, personInfo.DateOfBirth, personInfo.Image_Path, personInfo.Email,
-                    personInfo.National_NO, academicYear, departmentID);
+                    personInfo.National_NO, academicYear,(clsDepartment.Department) departmentID);
             }
             else
                 return null; // if no student founded
@@ -136,6 +136,9 @@ namespace Business
             return clsStudentData.CountMales();
         }
 
-        
+        public static DataTable AllEnrollments(int studentID)
+        {
+            return clsStudentData.StudentEnrollments(studentID);
+        }
     }
 }

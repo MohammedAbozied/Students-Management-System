@@ -37,18 +37,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button_std = new System.Windows.Forms.Button();
             this.panel_stdsubmenu = new System.Windows.Forms.Panel();
-            this.button_stdPrint = new System.Windows.Forms.Button();
-            this.button_status = new System.Windows.Forms.Button();
             this.button_manageStd = new System.Windows.Forms.Button();
             this.button_registration = new System.Windows.Forms.Button();
             this.button_course = new System.Windows.Forms.Button();
             this.panel_courseSubmenu = new System.Windows.Forms.Panel();
-            this.button_coursePrint = new System.Windows.Forms.Button();
             this.button_manageCourse = new System.Windows.Forms.Button();
             this.button_newCourse = new System.Windows.Forms.Button();
             this.button_score = new System.Windows.Forms.Button();
             this.panel_scoreSubmenu = new System.Windows.Forms.Panel();
-            this.button_scorePrint = new System.Windows.Forms.Button();
             this.button_manageScore = new System.Windows.Forms.Button();
             this.button_newScore = new System.Windows.Forms.Button();
             this.button_exit = new System.Windows.Forms.Button();
@@ -57,7 +53,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label_role = new System.Windows.Forms.Label();
             this.label_user = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.main_panel = new System.Windows.Forms.Panel();
@@ -67,8 +63,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lblTotalStudents = new System.Windows.Forms.Label();
             this.panel_Filter = new System.Windows.Forms.Panel();
-            this.lblTotalMale = new System.Windows.Forms.Label();
             this.lblTotalFemale = new System.Windows.Forms.Label();
+            this.lblTotalMale = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel_logo.SuspendLayout();
             this.panel_stdsubmenu.SuspendLayout();
@@ -170,54 +166,14 @@
             // 
             // panel_stdsubmenu
             // 
-            this.panel_stdsubmenu.Controls.Add(this.button_stdPrint);
-            this.panel_stdsubmenu.Controls.Add(this.button_status);
             this.panel_stdsubmenu.Controls.Add(this.button_manageStd);
             this.panel_stdsubmenu.Controls.Add(this.button_registration);
             this.panel_stdsubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_stdsubmenu.Location = new System.Drawing.Point(0, 191);
             this.panel_stdsubmenu.Margin = new System.Windows.Forms.Padding(2);
             this.panel_stdsubmenu.Name = "panel_stdsubmenu";
-            this.panel_stdsubmenu.Size = new System.Drawing.Size(179, 222);
+            this.panel_stdsubmenu.Size = new System.Drawing.Size(179, 116);
             this.panel_stdsubmenu.TabIndex = 2;
-            // 
-            // button_stdPrint
-            // 
-            this.button_stdPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(200)))));
-            this.button_stdPrint.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_stdPrint.FlatAppearance.BorderSize = 0;
-            this.button_stdPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_stdPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_stdPrint.ForeColor = System.Drawing.Color.White;
-            this.button_stdPrint.Location = new System.Drawing.Point(0, 162);
-            this.button_stdPrint.Margin = new System.Windows.Forms.Padding(2);
-            this.button_stdPrint.Name = "button_stdPrint";
-            this.button_stdPrint.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
-            this.button_stdPrint.Size = new System.Drawing.Size(179, 54);
-            this.button_stdPrint.TabIndex = 3;
-            this.button_stdPrint.Text = "Print";
-            this.button_stdPrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_stdPrint.UseVisualStyleBackColor = false;
-            this.button_stdPrint.Click += new System.EventHandler(this.button_stdPrint_Click);
-            // 
-            // button_status
-            // 
-            this.button_status.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(200)))));
-            this.button_status.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_status.FlatAppearance.BorderSize = 0;
-            this.button_status.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_status.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_status.ForeColor = System.Drawing.Color.White;
-            this.button_status.Location = new System.Drawing.Point(0, 108);
-            this.button_status.Margin = new System.Windows.Forms.Padding(2);
-            this.button_status.Name = "button_status";
-            this.button_status.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
-            this.button_status.Size = new System.Drawing.Size(179, 54);
-            this.button_status.TabIndex = 2;
-            this.button_status.Text = "status";
-            this.button_status.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_status.UseVisualStyleBackColor = false;
-            this.button_status.Click += new System.EventHandler(this.button_status_Click);
             // 
             // button_manageStd
             // 
@@ -264,7 +220,7 @@
             this.button_course.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_course.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_course.ForeColor = System.Drawing.Color.White;
-            this.button_course.Location = new System.Drawing.Point(0, 413);
+            this.button_course.Location = new System.Drawing.Point(0, 307);
             this.button_course.Margin = new System.Windows.Forms.Padding(2);
             this.button_course.Name = "button_course";
             this.button_course.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -277,34 +233,14 @@
             // 
             // panel_courseSubmenu
             // 
-            this.panel_courseSubmenu.Controls.Add(this.button_coursePrint);
             this.panel_courseSubmenu.Controls.Add(this.button_manageCourse);
             this.panel_courseSubmenu.Controls.Add(this.button_newCourse);
             this.panel_courseSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_courseSubmenu.Location = new System.Drawing.Point(0, 471);
+            this.panel_courseSubmenu.Location = new System.Drawing.Point(0, 365);
             this.panel_courseSubmenu.Margin = new System.Windows.Forms.Padding(2);
             this.panel_courseSubmenu.Name = "panel_courseSubmenu";
-            this.panel_courseSubmenu.Size = new System.Drawing.Size(179, 167);
+            this.panel_courseSubmenu.Size = new System.Drawing.Size(179, 118);
             this.panel_courseSubmenu.TabIndex = 4;
-            // 
-            // button_coursePrint
-            // 
-            this.button_coursePrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(180)))));
-            this.button_coursePrint.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_coursePrint.FlatAppearance.BorderSize = 0;
-            this.button_coursePrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_coursePrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_coursePrint.ForeColor = System.Drawing.Color.White;
-            this.button_coursePrint.Location = new System.Drawing.Point(0, 108);
-            this.button_coursePrint.Margin = new System.Windows.Forms.Padding(2);
-            this.button_coursePrint.Name = "button_coursePrint";
-            this.button_coursePrint.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
-            this.button_coursePrint.Size = new System.Drawing.Size(179, 54);
-            this.button_coursePrint.TabIndex = 3;
-            this.button_coursePrint.Text = "Print";
-            this.button_coursePrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_coursePrint.UseVisualStyleBackColor = false;
-            this.button_coursePrint.Click += new System.EventHandler(this.button_coursePrint_Click);
             // 
             // button_manageCourse
             // 
@@ -351,7 +287,7 @@
             this.button_score.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_score.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_score.ForeColor = System.Drawing.Color.White;
-            this.button_score.Location = new System.Drawing.Point(0, 638);
+            this.button_score.Location = new System.Drawing.Point(0, 483);
             this.button_score.Margin = new System.Windows.Forms.Padding(2);
             this.button_score.Name = "button_score";
             this.button_score.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -364,34 +300,14 @@
             // 
             // panel_scoreSubmenu
             // 
-            this.panel_scoreSubmenu.Controls.Add(this.button_scorePrint);
             this.panel_scoreSubmenu.Controls.Add(this.button_manageScore);
             this.panel_scoreSubmenu.Controls.Add(this.button_newScore);
             this.panel_scoreSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_scoreSubmenu.Location = new System.Drawing.Point(0, 696);
+            this.panel_scoreSubmenu.Location = new System.Drawing.Point(0, 541);
             this.panel_scoreSubmenu.Margin = new System.Windows.Forms.Padding(2);
             this.panel_scoreSubmenu.Name = "panel_scoreSubmenu";
-            this.panel_scoreSubmenu.Size = new System.Drawing.Size(179, 171);
+            this.panel_scoreSubmenu.Size = new System.Drawing.Size(179, 125);
             this.panel_scoreSubmenu.TabIndex = 6;
-            // 
-            // button_scorePrint
-            // 
-            this.button_scorePrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(180)))));
-            this.button_scorePrint.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_scorePrint.FlatAppearance.BorderSize = 0;
-            this.button_scorePrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_scorePrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_scorePrint.ForeColor = System.Drawing.Color.White;
-            this.button_scorePrint.Location = new System.Drawing.Point(0, 108);
-            this.button_scorePrint.Margin = new System.Windows.Forms.Padding(2);
-            this.button_scorePrint.Name = "button_scorePrint";
-            this.button_scorePrint.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
-            this.button_scorePrint.Size = new System.Drawing.Size(179, 54);
-            this.button_scorePrint.TabIndex = 4;
-            this.button_scorePrint.Text = "Print";
-            this.button_scorePrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_scorePrint.UseVisualStyleBackColor = false;
-            this.button_scorePrint.Click += new System.EventHandler(this.button_scorePrint_Click);
             // 
             // button_manageScore
             // 
@@ -433,20 +349,19 @@
             // 
             // button_exit
             // 
-            this.button_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(200)))));
+            this.button_exit.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button_exit.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_exit.FlatAppearance.BorderSize = 0;
             this.button_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_exit.ForeColor = System.Drawing.Color.White;
-            this.button_exit.Location = new System.Drawing.Point(0, 867);
+            this.button_exit.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_exit.ForeColor = System.Drawing.Color.Brown;
+            this.button_exit.Location = new System.Drawing.Point(0, 666);
             this.button_exit.Margin = new System.Windows.Forms.Padding(2);
             this.button_exit.Name = "button_exit";
             this.button_exit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_exit.Size = new System.Drawing.Size(179, 58);
+            this.button_exit.Size = new System.Drawing.Size(179, 80);
             this.button_exit.TabIndex = 7;
             this.button_exit.Text = "Exit";
-            this.button_exit.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button_exit.UseVisualStyleBackColor = false;
             this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
             // 
@@ -476,7 +391,7 @@
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label_role);
             this.panel3.Controls.Add(this.label_user);
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.lbl);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -498,12 +413,13 @@
             // 
             // label_role
             // 
-            this.label_role.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_role.ForeColor = System.Drawing.Color.White;
+            this.label_role.AutoSize = true;
+            this.label_role.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_role.ForeColor = System.Drawing.Color.Lime;
             this.label_role.Location = new System.Drawing.Point(151, 52);
             this.label_role.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label_role.Name = "label_role";
-            this.label_role.Size = new System.Drawing.Size(79, 16);
+            this.label_role.Size = new System.Drawing.Size(64, 29);
             this.label_role.TabIndex = 3;
             this.label_role.Text = "admin";
             this.label_role.Click += new System.EventHandler(this.label7_Click);
@@ -519,16 +435,17 @@
             this.label_user.TabIndex = 2;
             this.label_user.Text = "Tanta University";
             // 
-            // label5
+            // lbl
             // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(94, 52);
-            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 16);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Role : ";
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.ForeColor = System.Drawing.Color.White;
+            this.lbl.Location = new System.Drawing.Point(94, 58);
+            this.lbl.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(52, 17);
+            this.lbl.TabIndex = 1;
+            this.lbl.Text = "User: ";
             // 
             // label4
             // 
@@ -638,18 +555,6 @@
             this.panel_Filter.TabIndex = 3;
             this.panel_Filter.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // lblTotalMale
-            // 
-            this.lblTotalMale.AutoSize = true;
-            this.lblTotalMale.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalMale.ForeColor = System.Drawing.Color.Lime;
-            this.lblTotalMale.Location = new System.Drawing.Point(110, 52);
-            this.lblTotalMale.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblTotalMale.Name = "lblTotalMale";
-            this.lblTotalMale.Size = new System.Drawing.Size(60, 27);
-            this.lblTotalMale.TabIndex = 5;
-            this.lblTotalMale.Text = "[????]";
-            // 
             // lblTotalFemale
             // 
             this.lblTotalFemale.AutoSize = true;
@@ -661,6 +566,18 @@
             this.lblTotalFemale.Size = new System.Drawing.Size(60, 27);
             this.lblTotalFemale.TabIndex = 6;
             this.lblTotalFemale.Text = "[????]";
+            // 
+            // lblTotalMale
+            // 
+            this.lblTotalMale.AutoSize = true;
+            this.lblTotalMale.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalMale.ForeColor = System.Drawing.Color.Lime;
+            this.lblTotalMale.Location = new System.Drawing.Point(110, 52);
+            this.lblTotalMale.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblTotalMale.Name = "lblTotalMale";
+            this.lblTotalMale.Size = new System.Drawing.Size(60, 27);
+            this.lblTotalMale.TabIndex = 5;
+            this.lblTotalMale.Text = "[????]";
             // 
             // Main_Form
             // 
@@ -688,6 +605,7 @@
             this.panel_scoreSubmenu.ResumeLayout(false);
             this.panel_slide.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.main_panel.ResumeLayout(false);
@@ -707,18 +625,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_std;
         private System.Windows.Forms.Panel panel_stdsubmenu;
-        private System.Windows.Forms.Button button_stdPrint;
-        private System.Windows.Forms.Button button_status;
         private System.Windows.Forms.Button button_manageStd;
         private System.Windows.Forms.Button button_registration;
         private System.Windows.Forms.Button button_course;
         private System.Windows.Forms.Panel panel_courseSubmenu;
-        private System.Windows.Forms.Button button_coursePrint;
         private System.Windows.Forms.Button button_manageCourse;
         private System.Windows.Forms.Button button_newCourse;
         private System.Windows.Forms.Button button_score;
         private System.Windows.Forms.Panel panel_scoreSubmenu;
-        private System.Windows.Forms.Button button_scorePrint;
         private System.Windows.Forms.Button button_manageScore;
         private System.Windows.Forms.Button button_newScore;
         private System.Windows.Forms.Button button_exit;
@@ -727,7 +641,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label_role;
         private System.Windows.Forms.Label label_user;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel main_panel;

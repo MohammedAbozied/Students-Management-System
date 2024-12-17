@@ -25,12 +25,6 @@ C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Deb
 C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Debug\Student .B1F29E5F.Up2Date
 C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Debug\Student Management System.exe
 C:\Users\hp\Desktop\Students-Management-System\Student Management System\obj\Debug\Student Management System.pdb
-D:\Open Source Project\Student Management System\obj\Debug\Student Management System.csproj.AssemblyReference.cache
-D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.Main_Form.resources
-D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.Properties.Resources.resources
-D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.RegisterForm.resources
-D:\Open Source Project\Student Management System\obj\Debug\Student Management System.csproj.GenerateResource.cache
-D:\Open Source Project\Student Management System\obj\Debug\Student Management System.csproj.CoreCompileInputs.cache
 D:\Open Source Project\Student Management System\bin\Debug\data base\StudentManagementSystem_DataBase.mdf
 D:\Open Source Project\Student Management System\bin\Debug\data base\StudentManagementSystem_DataBase_log.ldf
 D:\Open Source Project\Student Management System\bin\Debug\Student Management System.exe.config
@@ -49,6 +43,17 @@ D:\Open Source Project\Student Management System\bin\Debug\EntityFramework.SqlSe
 D:\Open Source Project\Student Management System\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.xml
 D:\Open Source Project\Student Management System\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
 D:\Open Source Project\Student Management System\bin\Debug\Data_Access.pdb
+D:\Open Source Project\Student Management System\obj\Debug\Student Management System.csproj.AssemblyReference.cache
+D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.Main_Form.resources
+D:\Open Source Project\Student Management System\obj\Debug\Transparent_Form.ManageScoreForm.resources
+D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.Properties.Resources.resources
+D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.ManageStudentForm.resources
+D:\Open Source Project\Student Management System\obj\Debug\Student Management System.csproj.GenerateResource.cache
+D:\Open Source Project\Student Management System\obj\Debug\Student Management System.csproj.CoreCompileInputs.cache
 D:\Open Source Project\Student Management System\obj\Debug\Student .B1F29E5F.Up2Date
 D:\Open Source Project\Student Management System\obj\Debug\Student Management System.exe
 D:\Open Source Project\Student Management System\obj\Debug\Student Management System.pdb
+D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.RegisterForm.resources
+D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.CourseForm.resources
+D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.SelectInstructor.resources
+D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.ManageCourseForm.resources

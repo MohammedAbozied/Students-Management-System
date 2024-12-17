@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Transparent_Form;
 
 namespace Student_Management_System
 {
@@ -46,6 +47,35 @@ namespace Student_Management_System
             else
                 submenu.Visible = false;
         }
+
+        private void button_registration_Click_1(object sender, EventArgs e)
+        {
+
+            main_panel.Controls.Clear();
+
+            RegisterForm frm = new RegisterForm();
+
+            frm.DataBack +=
+                (object s, RegisterForm.DataBackEventArgs d) =>
+                {
+                    lblTotalStudents.Text = d.TotalStudents.ToString();
+                    lblTotalMale.Text = d.TotalMale.ToString();
+                    lblTotalFemale.Text = d.TotalFemale.ToString();
+                };
+
+
+            frm.TopLevel = false;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+
+            main_panel.Controls.Add(frm);
+            main_panel.Tag = frm;
+
+            frm.BringToFront();
+            frm.Show();
+        }
+
+
         private void button_std_Click(object sender, EventArgs e)
         {
             showSubmenu(panel_stdsubmenu);
@@ -90,18 +120,37 @@ namespace Student_Management_System
 
         private void button_newCourse_Click(object sender, EventArgs e)
         {
-            //...
-            //...Your code
-            //...
-            hideSubmenu();
+            main_panel.Controls.Clear();
+
+            CourseForm frm = new CourseForm();
+
+            frm.TopLevel = false;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+
+            main_panel.Controls.Add(frm);
+            main_panel.Tag = frm;
+
+            frm.BringToFront();
+            frm.Show();
+
         }
 
         private void button_manageCourse_Click(object sender, EventArgs e)
         {
-            //...
-            //...Your code
-            //...
-            hideSubmenu();
+            main_panel.Controls.Clear();
+
+            ManageCourseForm frm = new ManageCourseForm();
+
+            frm.TopLevel = false;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+
+            main_panel.Controls.Add(frm);
+            main_panel.Tag = frm;
+
+            frm.BringToFront();
+            frm.Show();
         }
 
         private void button_coursePrint_Click(object sender, EventArgs e)
@@ -127,10 +176,20 @@ namespace Student_Management_System
 
         private void button_manageScore_Click(object sender, EventArgs e)
         {
-            //...
-            //...Your code
-            //...
-            hideSubmenu();
+            main_panel.Controls.Clear();
+
+            ManageScoreForm frm = new ManageScoreForm();
+
+            frm.TopLevel = false;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+
+            main_panel.Controls.Add(frm);
+            main_panel.Tag = frm;
+
+            frm.BringToFront();
+            frm.Show();
+
         }
 
         private void button_scorePrint_Click(object sender, EventArgs e)
@@ -147,6 +206,28 @@ namespace Student_Management_System
 
         private void button_manageStd_Click_1(object sender, EventArgs e)
         {
+
+            main_panel.Controls.Clear();
+
+            ManageStudentForm frm = new ManageStudentForm();
+
+            frm.DataBack +=
+                (object s, ManageStudentForm.DataBackEventArgs d) =>
+                {
+                    lblTotalStudents.Text = d.TotalStudents.ToString();
+                    lblTotalMale.Text = d.TotalMale.ToString();
+                    lblTotalFemale.Text = d.TotalFemale.ToString();
+                };
+
+            frm.TopLevel = false;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+
+            main_panel.Controls.Add(frm);
+            main_panel.Tag = frm;
+
+            frm.BringToFront();
+            frm.Show();
 
         }
 
@@ -185,33 +266,7 @@ namespace Student_Management_System
 
         }
 
-        private void button_registration_Click_1(object sender, EventArgs e)
-        {
-            
-            main_panel.Controls.Clear();
-
-            RegisterForm frm = new RegisterForm();
-
-            frm.DataBack += 
-                (object s, RegisterForm.DataBackEventArgs d) =>
-                {
-                    lblTotalStudents.Text = d.TotalStudents.ToString();
-                    lblTotalMale.Text = d.TotalMale.ToString();
-                    lblTotalFemale.Text = d.TotalFemale.ToString();
-                };
-
-
-            frm.TopLevel = false;
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Dock = DockStyle.Fill; 
-
-            main_panel.Controls.Add(frm);
-            main_panel.Tag = frm;
-
-            frm.BringToFront();
-            frm.Show();
-        }
-
+       
         private void Main_Form_Load(object sender, EventArgs e)
         {
 

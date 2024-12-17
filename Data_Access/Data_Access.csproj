@@ -62,6 +62,7 @@
     <Compile Include="clsInstructorData.cs" />
     <Compile Include="clsPersonData.cs" />
     <Compile Include="clsStudentData.cs" />
+    <Compile Include="clsUser.cs" />
     <Compile Include="DataAccessSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

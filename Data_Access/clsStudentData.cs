@@ -250,6 +250,40 @@ namespace Data_Access
             }
 
         }
+        
+        public static DataTable StudentEnrollments(int studentID)
+        {
+            DataTable dataTable = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString))
+            {
+                string query = @"SELECT *  FROM Enrollments_View WHERE Stu_ID = @studentID";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@studentID", studentID);
+
+                    try
+                    {
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                dataTable.Load(reader);
+                            }
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                    }
+                }
+            }
+            return dataTable;
+
+        }
 
 
 

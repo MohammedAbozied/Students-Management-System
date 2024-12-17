@@ -17,7 +17,7 @@ namespace Data_Access
             bool isFound = false;
             using (SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString))
             {
-                string query = "SELECT * FROM Enrollments_View WHERE EnrollmentID = @enrollmentID";
+                string query = "SELECT * FROM Enrollment WHERE EnrollmentID = @enrollmentID";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {

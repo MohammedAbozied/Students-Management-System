@@ -1,11 +1,11 @@
-D:\Open Source Project\Business\obj\Debug\Business.csproj.AssemblyReference.cache
-D:\Open Source Project\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
 D:\Open Source Project\Business\bin\Debug\data base\StudentManagementSystem_DataBase.mdf
 D:\Open Source Project\Business\bin\Debug\data base\StudentManagementSystem_DataBase_log.ldf
 D:\Open Source Project\Business\bin\Debug\Business.dll
 D:\Open Source Project\Business\bin\Debug\Business.pdb
 D:\Open Source Project\Business\bin\Debug\Data_Access.dll
 D:\Open Source Project\Business\bin\Debug\Data_Access.pdb
+D:\Open Source Project\Business\obj\Debug\Business.csproj.AssemblyReference.cache
+D:\Open Source Project\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
 D:\Open Source Project\Business\obj\Debug\Business.csproj.Up2Date
 D:\Open Source Project\Business\obj\Debug\Business.dll
 D:\Open Source Project\Business\obj\Debug\Business.pdb

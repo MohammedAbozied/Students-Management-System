@@ -68,11 +68,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsUtil.cs" />
+    <Compile Include="courseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseForm.Designer.cs">
+      <DependentUpon>courseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main_Form\Main_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main_Form\Main_Form.Designer.cs">
       <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageCourseForm.Designer.cs">
+      <DependentUpon>ManageCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageScoreForm.Designer.cs">
+      <DependentUpon>ManageScoreForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,8 +101,29 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SelectInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectInstructor.Designer.cs">
+      <DependentUpon>SelectInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentManagement\ManageStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentManagement\ManageStudentForm.Designer.cs">
+      <DependentUpon>ManageStudentForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CourseForm.resx">
+      <DependentUpon>courseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main_Form\Main_Form.resx">
       <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageCourseForm.resx">
+      <DependentUpon>ManageCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageScoreForm.resx">
+      <DependentUpon>ManageScoreForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -97,6 +137,12 @@
     </Compile>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectInstructor.resx">
+      <DependentUpon>SelectInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentManagement\ManageStudentForm.resx">
+      <DependentUpon>ManageStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Business.clsStudent.datasource" />
@@ -149,6 +195,7 @@
   <ItemGroup>
     <None Include="Resources\cover31.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

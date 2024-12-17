@@ -48,9 +48,6 @@
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnAddStudent = new System.Windows.Forms.Button();
-            this.btnUploadStudentImage = new System.Windows.Forms.Button();
-            this.btnDeleteStudent = new System.Windows.Forms.Button();
-            this.pcImage = new System.Windows.Forms.PictureBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
@@ -62,11 +59,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.clsStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button_clean = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVStudents)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clsStudentBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +76,7 @@
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1078, 49);
+            this.panel1.Size = new System.Drawing.Size(1446, 49);
             this.panel1.TabIndex = 18;
             // 
             // label7
@@ -88,7 +85,7 @@
             this.label7.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(0, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(1078, 49);
+            this.label7.Size = new System.Drawing.Size(1446, 49);
             this.label7.TabIndex = 0;
             this.label7.Text = "Registeration";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -101,7 +98,7 @@
             this.panel2.Controls.Add(this.DGVStudents);
             this.panel2.Location = new System.Drawing.Point(6, 55);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1072, 336);
+            this.panel2.Size = new System.Drawing.Size(1440, 412);
             this.panel2.TabIndex = 19;
             // 
             // DGVStudents
@@ -137,7 +134,7 @@
             this.DGVStudents.RowHeadersVisible = false;
             this.DGVStudents.RowHeadersWidth = 50;
             this.DGVStudents.RowTemplate.Height = 24;
-            this.DGVStudents.Size = new System.Drawing.Size(1072, 336);
+            this.DGVStudents.Size = new System.Drawing.Size(1440, 412);
             this.DGVStudents.TabIndex = 0;
             this.DGVStudents.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DGVStudents.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -164,6 +161,7 @@
             // panel3
             // 
             this.panel3.AutoSize = true;
+            this.panel3.Controls.Add(this.button_clean);
             this.panel3.Controls.Add(this.cbDepartments);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.txtNationalNo);
@@ -174,9 +172,6 @@
             this.panel3.Controls.Add(this.txtLastName);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.btnAddStudent);
-            this.panel3.Controls.Add(this.btnUploadStudentImage);
-            this.panel3.Controls.Add(this.btnDeleteStudent);
-            this.panel3.Controls.Add(this.pcImage);
             this.panel3.Controls.Add(this.txtAddress);
             this.panel3.Controls.Add(this.rbFemale);
             this.panel3.Controls.Add(this.rbMale);
@@ -188,9 +183,9 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 397);
+            this.panel3.Location = new System.Drawing.Point(0, 473);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1078, 348);
+            this.panel3.Size = new System.Drawing.Size(1446, 348);
             this.panel3.TabIndex = 20;
             // 
             // cbDepartments
@@ -297,55 +292,13 @@
             this.btnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddStudent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddStudent.ForeColor = System.Drawing.Color.White;
-            this.btnAddStudent.Location = new System.Drawing.Point(899, 278);
+            this.btnAddStudent.Location = new System.Drawing.Point(1267, 278);
             this.btnAddStudent.Name = "btnAddStudent";
             this.btnAddStudent.Size = new System.Drawing.Size(132, 58);
             this.btnAddStudent.TabIndex = 31;
             this.btnAddStudent.Text = "Add";
             this.btnAddStudent.UseVisualStyleBackColor = false;
             this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
-            // 
-            // btnUploadStudentImage
-            // 
-            this.btnUploadStudentImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUploadStudentImage.AutoSize = true;
-            this.btnUploadStudentImage.BackColor = System.Drawing.Color.Green;
-            this.btnUploadStudentImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUploadStudentImage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUploadStudentImage.ForeColor = System.Drawing.Color.White;
-            this.btnUploadStudentImage.Location = new System.Drawing.Point(899, 175);
-            this.btnUploadStudentImage.Name = "btnUploadStudentImage";
-            this.btnUploadStudentImage.Size = new System.Drawing.Size(132, 58);
-            this.btnUploadStudentImage.TabIndex = 29;
-            this.btnUploadStudentImage.Text = "Upload";
-            this.btnUploadStudentImage.UseVisualStyleBackColor = false;
-            // 
-            // btnDeleteStudent
-            // 
-            this.btnDeleteStudent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDeleteStudent.BackColor = System.Drawing.Color.Orange;
-            this.btnDeleteStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteStudent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteStudent.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteStudent.Location = new System.Drawing.Point(744, 278);
-            this.btnDeleteStudent.Name = "btnDeleteStudent";
-            this.btnDeleteStudent.Size = new System.Drawing.Size(132, 58);
-            this.btnDeleteStudent.TabIndex = 30;
-            this.btnDeleteStudent.Text = "Delete";
-            this.btnDeleteStudent.UseVisualStyleBackColor = false;
-            this.btnDeleteStudent.Click += new System.EventHandler(this.btnDeleteStudent_Click);
-            // 
-            // pcImage
-            // 
-            this.pcImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pcImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pcImage.ErrorImage = null;
-            this.pcImage.InitialImage = null;
-            this.pcImage.Location = new System.Drawing.Point(898, 18);
-            this.pcImage.Name = "pcImage";
-            this.pcImage.Size = new System.Drawing.Size(133, 121);
-            this.pcImage.TabIndex = 28;
-            this.pcImage.TabStop = false;
             // 
             // txtAddress
             // 
@@ -389,6 +342,7 @@
             this.DTP_DateOfBirth.Name = "DTP_DateOfBirth";
             this.DTP_DateOfBirth.Size = new System.Drawing.Size(296, 32);
             this.DTP_DateOfBirth.TabIndex = 24;
+            this.DTP_DateOfBirth.Value = new System.DateTime(2004, 1, 1, 0, 0, 0, 0);
             // 
             // label4
             // 
@@ -458,22 +412,37 @@
             // 
             this.clsStudentBindingSource.DataSource = typeof(Business.clsStudent);
             // 
+            // button_clean
+            // 
+            this.button_clean.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_clean.BackColor = System.Drawing.Color.Orange;
+            this.button_clean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_clean.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_clean.ForeColor = System.Drawing.Color.White;
+            this.button_clean.Location = new System.Drawing.Point(1102, 278);
+            this.button_clean.Name = "button_clean";
+            this.button_clean.Size = new System.Drawing.Size(132, 58);
+            this.button_clean.TabIndex = 42;
+            this.button_clean.Text = "Clear";
+            this.button_clean.UseVisualStyleBackColor = false;
+            this.button_clean.Click += new System.EventHandler(this.button_clean_Click);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1078, 745);
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(1446, 821);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "RegisterForm1";
+            this.Text = "Registeration";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.RegisterForm1_Load);
             this.panel1.ResumeLayout(false);
@@ -481,7 +450,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGVStudents)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clsStudentBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -497,9 +465,6 @@
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAddStudent;
-        private System.Windows.Forms.Button btnDeleteStudent;
-        private System.Windows.Forms.Button btnUploadStudentImage;
-        private System.Windows.Forms.PictureBox pcImage;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.RadioButton rbFemale;
         private System.Windows.Forms.RadioButton rbMale;
@@ -518,5 +483,6 @@
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2ComboBox cbDepartments;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button_clean;
     }
 }
