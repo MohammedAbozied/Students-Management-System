@@ -46,7 +46,7 @@
             this.button_score = new System.Windows.Forms.Button();
             this.panel_scoreSubmenu = new System.Windows.Forms.Panel();
             this.button_manageScore = new System.Windows.Forms.Button();
-            this.button_newScore = new System.Windows.Forms.Button();
+            this.btnEnrollment = new System.Windows.Forms.Button();
             this.button_exit = new System.Windows.Forms.Button();
             this.panel_slide = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -301,7 +301,7 @@
             // panel_scoreSubmenu
             // 
             this.panel_scoreSubmenu.Controls.Add(this.button_manageScore);
-            this.panel_scoreSubmenu.Controls.Add(this.button_newScore);
+            this.panel_scoreSubmenu.Controls.Add(this.btnEnrollment);
             this.panel_scoreSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_scoreSubmenu.Location = new System.Drawing.Point(0, 541);
             this.panel_scoreSubmenu.Margin = new System.Windows.Forms.Padding(2);
@@ -328,24 +328,24 @@
             this.button_manageScore.UseVisualStyleBackColor = false;
             this.button_manageScore.Click += new System.EventHandler(this.button_manageScore_Click);
             // 
-            // button_newScore
+            // btnEnrollment
             // 
-            this.button_newScore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(180)))));
-            this.button_newScore.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_newScore.FlatAppearance.BorderSize = 0;
-            this.button_newScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_newScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_newScore.ForeColor = System.Drawing.Color.White;
-            this.button_newScore.Location = new System.Drawing.Point(0, 0);
-            this.button_newScore.Margin = new System.Windows.Forms.Padding(2);
-            this.button_newScore.Name = "button_newScore";
-            this.button_newScore.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
-            this.button_newScore.Size = new System.Drawing.Size(179, 54);
-            this.button_newScore.TabIndex = 2;
-            this.button_newScore.Text = "New Score";
-            this.button_newScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_newScore.UseVisualStyleBackColor = false;
-            this.button_newScore.Click += new System.EventHandler(this.button_newScore_Click);
+            this.btnEnrollment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(180)))));
+            this.btnEnrollment.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEnrollment.FlatAppearance.BorderSize = 0;
+            this.btnEnrollment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnrollment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnrollment.ForeColor = System.Drawing.Color.White;
+            this.btnEnrollment.Location = new System.Drawing.Point(0, 0);
+            this.btnEnrollment.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEnrollment.Name = "btnEnrollment";
+            this.btnEnrollment.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
+            this.btnEnrollment.Size = new System.Drawing.Size(179, 54);
+            this.btnEnrollment.TabIndex = 2;
+            this.btnEnrollment.Text = "Enrollment";
+            this.btnEnrollment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEnrollment.UseVisualStyleBackColor = false;
+            this.btnEnrollment.Click += new System.EventHandler(this.btnEnrollment_Click);
             // 
             // button_exit
             // 
@@ -634,7 +634,7 @@
         private System.Windows.Forms.Button button_score;
         private System.Windows.Forms.Panel panel_scoreSubmenu;
         private System.Windows.Forms.Button button_manageScore;
-        private System.Windows.Forms.Button button_newScore;
+        private System.Windows.Forms.Button btnEnrollment;
         private System.Windows.Forms.Button button_exit;
         private System.Windows.Forms.Panel panel_slide;
         private System.Windows.Forms.Panel panel3;

@@ -153,6 +153,23 @@ namespace Student_Management_System
             frm.Show();
         }
 
+        private void btnEnrollment_Click(object sender, EventArgs e)
+        {
+            main_panel.Controls.Clear();
+
+            EnrollmentForm frm = new EnrollmentForm();
+
+            frm.TopLevel = false;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+
+            main_panel.Controls.Add(frm);
+            main_panel.Tag = frm;
+
+            frm.BringToFront();
+            frm.Show();
+        }
+
         private void button_coursePrint_Click(object sender, EventArgs e)
         {
             //...
@@ -166,13 +183,7 @@ namespace Student_Management_System
             showSubmenu(panel_scoreSubmenu); ;
         }
 
-        private void button_newScore_Click(object sender, EventArgs e)
-        {
-            //...
-            //...Your code
-            //...
-            hideSubmenu();
-        }
+       
 
         private void button_manageScore_Click(object sender, EventArgs e)
         {
@@ -271,5 +282,7 @@ namespace Student_Management_System
         {
 
         }
+
+        
     }
 }

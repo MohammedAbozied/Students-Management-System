@@ -143,9 +143,6 @@ namespace Data_Access
             return affectedRows > 0;
         }
 
-       
-
-
         public static DataTable GetAllEnrollments()
         {
             DataTable dataTable = new DataTable();
@@ -175,6 +172,7 @@ namespace Data_Access
 
             return dataTable;
         }
+        
 
         
     }

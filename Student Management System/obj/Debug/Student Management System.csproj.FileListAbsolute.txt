@@ -57,3 +57,6 @@ D:\Open Source Project\Student Management System\obj\Debug\Student_Management_Sy
 D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.CourseForm.resources
 D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.SelectInstructor.resources
 D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.ManageCourseForm.resources
+D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.SelectStudentForm.resources
+D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.EnrollmentForm.resources
+D:\Open Source Project\Student Management System\obj\Debug\Student_Management_System.SelectCourseForm.resources
