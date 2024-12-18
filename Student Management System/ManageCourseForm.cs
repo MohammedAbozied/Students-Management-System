@@ -91,7 +91,7 @@ namespace Student_Management_System
             UpdateCourse.DepartmentID = cbDepartments.SelectedIndex+1;
             UpdateCourse.Hours = (byte)(cbHours.SelectedIndex + 1);
             UpdateCourse.InstructorID = selectedInstructor.InstructorID;
-
+            
             if(UpdateCourse.Save())
             {
                 MessageBox.Show("Course updated Successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

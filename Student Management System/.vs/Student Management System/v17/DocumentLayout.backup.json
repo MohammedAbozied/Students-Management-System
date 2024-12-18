@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Open Source Project\\Student Management System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|d:\\open source project\\student management system\\managecourseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:managecourseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|d:\\open source project\\student management system\\managecourseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:managecourseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|d:\\open source project\\student management system\\enrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{322693A8-69E9-48A9-B764-AFB04282510F}|Student Management System.csproj|solutionrelative:enrollmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,31 +67,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ManageCourseForm.cs",
+              "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\ManageCourseForm.cs",
+              "RelativeDocumentMoniker": "ManageCourseForm.cs",
+              "ToolTip": "D:\\Open Source Project\\Student Management System\\ManageCourseForm.cs*",
+              "RelativeToolTip": "ManageCourseForm.cs*",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAF0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T00:21:35.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManageCourseForm.cs [Design]",
+              "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\ManageCourseForm.cs",
+              "RelativeDocumentMoniker": "ManageCourseForm.cs",
+              "ToolTip": "D:\\Open Source Project\\Student Management System\\ManageCourseForm.cs [Design]*",
+              "RelativeToolTip": "ManageCourseForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T00:21:30.674Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "EnrollmentForm.cs",
               "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\EnrollmentForm.cs",
               "RelativeDocumentMoniker": "EnrollmentForm.cs",
-              "ToolTip": "D:\\Open Source Project\\Student Management System\\EnrollmentForm.cs*",
-              "RelativeToolTip": "EnrollmentForm.cs*",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAuwJYAAAA9AAAAAAAAAA==",
+              "ToolTip": "D:\\Open Source Project\\Student Management System\\EnrollmentForm.cs",
+              "RelativeToolTip": "EnrollmentForm.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAD0AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T15:35:45.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "EnrollmentForm.cs [Design]",
               "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\EnrollmentForm.cs",
               "RelativeDocumentMoniker": "EnrollmentForm.cs",
-              "ToolTip": "D:\\Open Source Project\\Student Management System\\EnrollmentForm.cs [Design]*",
-              "RelativeToolTip": "EnrollmentForm.cs [Design]*",
+              "ToolTip": "D:\\Open Source Project\\Student Management System\\EnrollmentForm.cs [Design]",
+              "RelativeToolTip": "EnrollmentForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T15:01:22.147Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Main_Form.cs [Design]",
               "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\Main_Form\\Main_Form.cs",
               "RelativeDocumentMoniker": "Main_Form\\Main_Form.cs",
@@ -95,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Main_Form.cs",
               "DocumentMoniker": "D:\\Open Source Project\\Student Management System\\Main_Form\\Main_Form.cs",
               "RelativeDocumentMoniker": "Main_Form\\Main_Form.cs",
