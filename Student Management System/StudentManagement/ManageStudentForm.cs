@@ -206,7 +206,10 @@ namespace Student_Management_System
                 }
 
                 if (student.Save())
+                { 
                     MessageBox.Show("updated successfully", "success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ManageStudentForm_Load(null, null);
+                }
                 else
                     MessageBox.Show("update failed", "failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
