@@ -1,29 +1,29 @@
 # 🎓 Student Management System – Desktop Application
 
-برنامج **Desktop** لإدارة الطلاب والكورسات والمدرسين، مصمم باستخدام **C# وADO.NET**، ويتيح التحكم الكامل في البيانات مع واجهة سهلة الاستخدام.  
-يعتمد البرنامج على **3 Architectures** لتنظيم الكود (Presentation, Business Logic, Data Access) لضمان فصل المهام وسهولة الصيانة والتوسع مستقبلاً.  
+A **Desktop Application** for managing students, courses, and instructors, developed using **C# and ADO.NET**.  
+The system uses **3-layer Architecture** (Presentation, Business Logic, Data Access) to organize code, ensure separation of concerns, and make maintenance and future scalability easier.
 
 ![Main Form](https://github.com/user-attachments/assets/16218d08-2e49-4101-89e2-9947fb58cc34)
 
-## 🛠️ التقنيات والمهارات Used Technologies & Skills
+## 🛠️ Technologies & Skills
 
-| القسم | التفاصيل |
-|-------|----------|
-| اللغات | C# |
-| التقنيات | ADO.NET, Windows Forms |
-| تصميم الكود | 3 Architectures (Presentation, BLL, DAL), Clean Coding Principles |
-| وظائف البرنامج | CRUD (Students, Courses, Instructors), Management |
+| Category | Details |
+|----------|---------|
+| Languages | C# |
+| Technologies | ADO.NET, Windows Forms |
+| Code Design | 3-layer Architecture (Presentation, BLL, DAL), Clean Coding Principles |
+| Features | CRUD (Students, Courses, Instructors), Management |
 
-## 📋 الميزات Features
+## 📋 Features
 
-- إدارة بيانات الطلاب (إضافة، تعديل، حذف، عرض)  
-- إدارة الكورسات والمواد الدراسية  
-- إدارة المدرسين وبياناتهم  
-- واجهة مستخدم سهلة الاستخدام وواضحة  
-- دعم البحث السريع والفلترة للبيانات  
-- فصل واضح بين واجهة المستخدم، منطق الأعمال، وطبقة الوصول للبيانات لتسهيل التطوير المستقبلي
+- Manage student data (Add, Update, Delete, View)  
+- Manage courses and academic subjects  
+- Manage instructor information  
+- User-friendly and intuitive interface  
+- Quick search and data filtering  
+- Clear separation between UI, business logic, and data access layers for easier development and future expansion
 
-## 📸 لقطات الشاشة Screenshots
+## 📸 Screenshots
 
 ![Screenshot 1](https://github.com/user-attachments/assets/647c52b9-b797-4540-bc1a-d427052affd7)
 ![Screenshot 2](https://github.com/user-attachments/assets/e3cab4fe-c5eb-441b-824c-2cbc30243142)
@@ -38,9 +38,7 @@
 ![Screenshot 11](https://github.com/user-attachments/assets/3799dc7d-d736-4774-99f6-c59a976c20fc)
 ![Screenshot 12](https://github.com/user-attachments/assets/0bebce5b-e550-4156-b16d-847b6bae1063)
 
-## 🚀 التشغيل How to Run
+## 🚀 How to Run
 
 ```bash
 git clone https://github.com/MohammedAbozied/Students-Management-System.git
-
-
