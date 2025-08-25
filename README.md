@@ -1,13 +1,17 @@
 # 🎓 Student Management System – Desktop Application
 
-برنامج **Desktop** لإدارة الطلاب والكورسات والمدرسين، مصمم باستخدام **C# وADO.NET**، ويتيح التحكم الكامل في البيانات مع واجهة سهلة الاستخدام.
+برنامج **Desktop** لإدارة الطلاب والكورسات والمدرسين، مصمم باستخدام **C# وADO.NET**، ويتيح التحكم الكامل في البيانات مع واجهة سهلة الاستخدام.  
+يعتمد البرنامج على **3 Architectures** لتنظيم الكود (Presentation, Business Logic, Data Access) لضمان فصل المهام وسهولة الصيانة والتوسع مستقبلاً.  
+
 ![Main Form](https://github.com/user-attachments/assets/16218d08-2e49-4101-89e2-9947fb58cc34)
+
 ## 🛠️ التقنيات والمهارات Used Technologies & Skills
 
 | القسم | التفاصيل |
 |-------|----------|
 | اللغات | C# |
 | التقنيات | ADO.NET, Windows Forms |
+| تصميم الكود | 3 Architectures (Presentation, BLL, DAL), Clean Coding Principles |
 | وظائف البرنامج | CRUD (Students, Courses, Instructors), Management |
 
 ## 📋 الميزات Features
@@ -17,9 +21,9 @@
 - إدارة المدرسين وبياناتهم  
 - واجهة مستخدم سهلة الاستخدام وواضحة  
 - دعم البحث السريع والفلترة للبيانات  
+- فصل واضح بين واجهة المستخدم، منطق الأعمال، وطبقة الوصول للبيانات لتسهيل التطوير المستقبلي
 
 ## 📸 لقطات الشاشة Screenshots
-
 
 ![Screenshot 1](https://github.com/user-attachments/assets/647c52b9-b797-4540-bc1a-d427052affd7)
 ![Screenshot 2](https://github.com/user-attachments/assets/e3cab4fe-c5eb-441b-824c-2cbc30243142)
@@ -34,8 +38,9 @@
 ![Screenshot 11](https://github.com/user-attachments/assets/3799dc7d-d736-4774-99f6-c59a976c20fc)
 ![Screenshot 12](https://github.com/user-attachments/assets/0bebce5b-e550-4156-b16d-847b6bae1063)
 
-
 ## 🚀 التشغيل How to Run
- 
+
 ```bash
-git clone https://github.com/MohammedAbozied/Students-Management-System
+git clone https://github.com/MohammedAbozied/Students-Management-System.git
+
+
